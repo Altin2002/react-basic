@@ -1,13 +1,11 @@
 import './App.scss';
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
-import Nav from './Nav';
 
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Products from './pages/Products';
 import About from './pages/About';
 import Footer from './components/Footer';
-import User from './components/User'
 
 function App() {
   return (
