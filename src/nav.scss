@@ -1,0 +1,140 @@
+.nav {
+    background: #233652;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        a {
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .svg {
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+        }
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .arrow {
+        position: absolute;
+        font-size: 30px;
+        color: #ddd;
+        top: 35px;
+        right: 5px;
+        display: none;
+    }
+
+    .nav-link {
+        position: relative;
+        .inner-link .svg {
+            transition: .25s;
+        }
+        &:hover {
+            .arrow {
+                display: block;
+            }
+            .nav-megamenu {
+                display: flex;
+            }
+            .inner-link .svg {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    .nav-link a {
+        margin: 0 15px;
+        padding: 15px 10px;
+    }
+
+    .inner-link {
+        font-size: 22px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    .auth a {
+        font-size: 20px;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 23px;
+
+    }
+
+    .signup {
+        background: #427cff;
+
+    }
+
+    .nav-megamenu {
+        background: #fff;
+        position: absolute;
+        width: 675px;
+        left: -170px;
+        top: 50px;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border: 1px solid #eee;
+        display: none;
+
+        .menu-link {
+            width: 48.5%;
+            padding: 10px 15px;
+            margin: 10px 0;
+            a {
+                display: flex;
+                align-items: center;
+                &:hover {
+                    background: #427cff;
+                    border-radius: 8px;
+                    h6, p {
+                        color: #fff;
+                    }
+                    .icon {
+                        background: #fff;
+
+                    }
+                }
+            }
+        }
+
+        .icon {
+            width: 70px;
+            height: 65px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin-right: 15px;
+            color: #427cff;
+        }
+        h6 {
+            font-size: 18px;
+            color: #111;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 18px;
+            color: #111;
+        }
+    }
+}
